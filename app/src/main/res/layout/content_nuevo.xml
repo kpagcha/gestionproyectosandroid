@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:showIn="@layout/activity_nuevo" tools:context="es.uca.gestionproyectos.NuevoActivity">
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="fill_parent"
+    android:layout_width="fill_parent">
+
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent"
+            android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:paddingTop="@dimen/activity_vertical_margin"
+            android:paddingBottom="@dimen/activity_vertical_margin"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior"
+            tools:showIn="@layout/activity_nuevo" tools:context="es.uca.gestionproyectos.NuevoActivity">
+
+            <TextView android:id="@+id/text_label_nombre"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/text_label_nombre" />
+
+            <EditText android:id="@+id/input_nombre"
+                android:singleLine="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/text_label_nombre"
+                android:layout_alignParentEnd="true" />
+
+            <TextView android:id="@+id/text_label_primer_apellido"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/text_label_primer_apellido"
+                android:layout_below="@id/input_nombre" />
+
+            <EditText android:id="@+id/input_primer_apellido"
+                android:singleLine="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/text_label_primer_apellido" />
+
+            <TextView android:id="@+id/text_label_segundo_apellido"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/text_label_segundo_apellido"
+                android:layout_below="@+id/input_primer_apellido" />
+
+            <EditText android:id="@+id/input_segundo_apellido"
+                android:singleLine="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/text_label_segundo_apellido"/>
+
+            <TextView android:id="@+id/text_label_titulo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/text_label_titulo"
+                android:layout_below="@+id/input_segundo_apellido" />
+
+            <EditText android:id="@+id/input_titulo"
+                android:singleLine="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/text_label_titulo" />
+
+            <TextView android:id="@+id/text_label_tutor1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/text_label_tutor1"
+                android:layout_below="@+id/input_titulo" />
+
+            <EditText android:id="@+id/input_tutor1"
+                android:singleLine="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/text_label_tutor1" />
+
+            <TextView android:id="@+id/text_label_tutor2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/text_label_tutor2"
+                android:layout_below="@+id/input_tutor1" />
+
+            <EditText android:id="@+id/input_tutor2"
+                android:singleLine="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/text_label_tutor2" />
+
+            <TextView android:id="@+id/text_label_estado"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/text_label_estado"
+                android:layout_below="@id/input_tutor2" />
+
+
+            <RadioGroup android:id="@+id/input_estado"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/text_label_estado">
+
+                <RadioButton android:id="@+id/button_option_desarrollo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/text_estado_desarrollo"
+                    android:checked="true" />
+
+                <RadioButton android:id="@+id/button_option_presentado"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/text_estado_presentado" />
+
+            </RadioGroup>
+
+            <TextView android:id="@+id/text_label_fecha"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/text_label_fecha"
+                android:layout_below="@id/input_estado" />
+
+            <TextView android:id="@+id/text_fecha"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/text_label_fecha" />
+
+            <Button android:id="@+id/button_fecha"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/button_fecha"
+                android:onClick="showDatePickerDialog"
+                android:layout_below="@id/text_fecha" />
+
+            <TextView android:id="@+id/text_label_calificacion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/text_label_calificacion"
+                android:layout_below="@id/button_fecha" />
+
+            <EditText android:id="@+id/input_calificacion"
+                android:singleLine="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/text_label_calificacion" />
+
+            <Button android:id="@+id/button_nuevo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="@string/button_nuevo"
+                android:layout_below="@+id/input_calificacion" />
+
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">Proyectos</string>
+    <string name="action_settings">Ajustes</string>
+    <string name="menuitem_todos">Ver todos</string>
+    <string name="menuitem_nuevo">Nuevo</string>
+    <string name="menuitem_buscar">Buscar</string>
+    <string name="menuitem_borrar">Borrar</string>
+    <string name="title_activity_todos">Todos</string>
+    <string name="title_activity_buscar">Buscar</string>
+    <string name="title_activity_nuevo">Nuevo</string>
+    <string name="title_activity_borrar">Borrar</string>
+    <string name="button_presentados">Proyectos presentados</string>
+    <string name="button_desarrollo">Proyectos en desarrollo</string>
+    <string name="text_welcome">Gestión de Proyectos de Fin de Grado</string>
+    <string name="text_label_buscar">Introduce el primer y segundo apellido del estudiante a buscar sin espacio entre ambos:</string>
+    <string name="button_buscar">Buscar</string>
+    <string name="text_label_nombre">Nombre</string>
+    <string name="text_label_primer_apellido">Primer apellido</string>
+    <string name="text_label_segundo_apellido">Segundo apellido</string>
+    <string name="text_label_titulo">Título del proyecto</string>
+    <string name="text_label_tutor1">Tutor</string>
+    <string name="text_label_tutor2">Tutor secundario</string>
+    <string name="text_label_estado">Estado del proyecto</string>
+    <string name="text_label_fecha">Fecha de presentación</string>
+    <string name="text_label_calificacion">Calificación</string>
+    <string name="button_nuevo">Nuevo estudiante</string>
+    <string name="text_label_borrar">Introduce el primer y segundo apellido del estudiante a borrar sin espacio entre ambos:</string>
+    <string name="button_borrar">Borrar</string>
+    <string name="appwidget_text">Todos los estudiantes</string>
+    <string name="add_widget">Add widget</string>
+    <string name="text_estado_desarrollo">En desarrollo</string>
+    <string name="text_estado_presentado">Presentado</string>
+    <string name="input_fecha">Elegir fecha</string>
+    <string name="button_fecha">Elegir fecha</string>
+</resources>

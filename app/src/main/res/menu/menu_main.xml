@@ -1,0 +1,20 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools" tools:context=".MainActivity">
+
+    <item android:id="@+id/menuitem_todos"
+        android:title="@string/menuitem_todos"
+        app:showAsAction="ifRoom" />
+
+    <item android:id="@+id/menuitem_buscar"
+        android:title="@string/menuitem_buscar"
+        app:showAsAction="ifRoom" />
+
+    <item android:id="@+id/menuitem_nuevo"
+        android:title="@string/menuitem_nuevo"
+        app:showAsAction="ifRoom" />
+
+    <item android:id="@+id/menuitem_borrar"
+        android:title="@string/menuitem_borrar"
+        app:showAsAction="ifRoom" />
+</menu>
